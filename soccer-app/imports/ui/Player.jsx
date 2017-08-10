@@ -31,6 +31,7 @@ export default class Player extends Component {
        <img src="messi.jpg" />
      </CardMedia>
      <CardText>
+       <div style={styles.wrapper}>
        <Chip
          backgroundColor={blue200}
          style={styles.chip}>
@@ -45,8 +46,49 @@ export default class Player extends Component {
          <Avatar size={32} color={blue200} backgroundColor={blue900}>
            2
          </Avatar>
+         Kicking Abilities
+       </Chip>
+       <Chip
+         backgroundColor={blue200}
+         style={styles.chip}>
+         <Avatar size={32} color={blue200} backgroundColor={blue900}>
+           2
+         </Avatar>
          Passing Abilities
        </Chip>
+       <Chip
+         backgroundColor={blue200}
+         style={styles.chip}>
+         <Avatar size={32} color={blue200} backgroundColor={blue900}>
+           1
+         </Avatar>
+         Dual Tackling
+       </Chip>
+       <Chip
+         backgroundColor={blue200}
+         style={styles.chip}>
+         <Avatar size={32} color={blue200} backgroundColor={blue900}>
+           3
+         </Avatar>
+         Field Coverage
+       </Chip>
+       <Chip
+         backgroundColor={blue200}
+         style={styles.chip}>
+         <Avatar size={32} color={blue200} backgroundColor={blue900}>
+           4
+         </Avatar>
+         Game Strategy
+       </Chip>
+       <Chip
+         backgroundColor={blue200}
+         style={styles.chip}>
+         <Avatar size={32} color={blue200} backgroundColor={blue900}>
+           3
+         </Avatar>
+         Playmaking Risks
+       </Chip>
+      </div>
      </CardText>
      <CardActions>
      </CardActions>
