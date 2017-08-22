@@ -4,6 +4,7 @@ import RaisedButton from 'material-ui/RaisedButton';
 import AppBar from 'material-ui/AppBar';
 
 
+
 import { List } from 'material-ui/List';
 import Divider from 'material-ui/Divider';
 import { createContainer } from 'meteor/react-meteor-data';
@@ -13,6 +14,7 @@ import { Players } from '../api/players';
 import TeamList from './Team-list';
 import TeamStat from './Team-stats';
 import Player from './Player';
+import AccountsWrapper from './AccountsWrapper';
 
 export class App extends Component {
 
@@ -39,7 +41,9 @@ renderPlayers() {
         <div className="container">
           <AppBar title="Soccer Application"
             iconClassNameRight="muidocs-icon-navigation-expand-more"
-          showMenuIconButton={false}/>
+          showMenuIconButton={false}>
+          <AccountsWrapper />
+        </AppBar>
           <div className="row">
             <div className="col s12 m7"><Player /></div>
             <div className="col s12 m5">
