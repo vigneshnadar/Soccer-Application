@@ -23,11 +23,17 @@ const styles = {
 
 export default class Player extends Component {
   render() {
+    const player = this.props.player;
+    const defense = player.dualTackling + player.fieldCoverage + player.passingAbilities + player.blockingAbilities;
+    const offense = player.playmakingRisks + player.gameStrategy + player.kickingAbilities + player.ballManipuation;
+    const total = offense + defense;
+
+
     return (
       <Card>
 
      <CardMedia
-       overlay={<CardTitle title="Lionel Messi" subtitle="Offense:5 Defence: 12" />}>
+       overlay={<CardTitle title={player.name} subtitle={`Offense: ${offense} Defence: ${defense} Total: ${total}`} />}>
        <img src="messi.jpg" />
      </CardMedia>
      <CardText>
@@ -36,7 +42,7 @@ export default class Player extends Component {
          backgroundColor={blue200}
          style={styles.chip}>
          <Avatar size={32} color={blue200} backgroundColor={blue900}>
-           2
+           {player.ballManipuation}
          </Avatar>
          Ball Manipulation
        </Chip>
@@ -44,7 +50,7 @@ export default class Player extends Component {
          backgroundColor={blue200}
          style={styles.chip}>
          <Avatar size={32} color={blue200} backgroundColor={blue900}>
-           2
+           {player.kickingAbilities}
          </Avatar>
          Kicking Abilities
        </Chip>
@@ -52,7 +58,7 @@ export default class Player extends Component {
          backgroundColor={blue200}
          style={styles.chip}>
          <Avatar size={32} color={blue200} backgroundColor={blue900}>
-           2
+           {player.passingAbilities}
          </Avatar>
          Passing Abilities
        </Chip>
@@ -60,7 +66,7 @@ export default class Player extends Component {
          backgroundColor={blue200}
          style={styles.chip}>
          <Avatar size={32} color={blue200} backgroundColor={blue900}>
-           1
+           {player.dualTackling}
          </Avatar>
          Dual Tackling
        </Chip>
@@ -68,7 +74,7 @@ export default class Player extends Component {
          backgroundColor={blue200}
          style={styles.chip}>
          <Avatar size={32} color={blue200} backgroundColor={blue900}>
-           3
+           {player.fieldCoverage}
          </Avatar>
          Field Coverage
        </Chip>
@@ -76,7 +82,7 @@ export default class Player extends Component {
          backgroundColor={blue200}
          style={styles.chip}>
          <Avatar size={32} color={blue200} backgroundColor={blue900}>
-           4
+           {player.gameStrategy}
          </Avatar>
          Game Strategy
        </Chip>
@@ -84,7 +90,7 @@ export default class Player extends Component {
          backgroundColor={blue200}
          style={styles.chip}>
          <Avatar size={32} color={blue200} backgroundColor={blue900}>
-           3
+           {player.playmakingRisks}
          </Avatar>
          Playmaking Risks
        </Chip>

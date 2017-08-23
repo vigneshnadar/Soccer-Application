@@ -1,1 +1,5 @@
 /* CSS declarations go here */
+#login-buttons > div {
+  padding-top: 12px;
+  color: white;
+}
