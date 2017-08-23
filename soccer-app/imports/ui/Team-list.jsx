@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import Avatar from 'material-ui/Avatar';
 import { ListItem } from 'material-ui/List';
+import { red500 } from 'material-ui/styles/colors';
 
 
 export default class TeamList extends Component {
