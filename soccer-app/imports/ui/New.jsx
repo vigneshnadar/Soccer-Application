@@ -149,7 +149,7 @@ export default class New extends Component {
           <textarea placeholder="Notes" ref="notes" type="text" className="materialize-textarea" />
         </div>
         <div className="input-field col s6">
-          <button className="btn waves-effect waves-light" type="submit" name="action">Submit
+          <button className="btn waves-effect waves-light light-blue darken-3" type="submit" name="action">Submit
           <i className="material-icons right">send</i>
         </button>
         </div>

@@ -3,7 +3,7 @@ import { Card, CardMedia, CardTitle, CardText, CardActions } from 'material-ui/C
 import RaisedButton from 'material-ui/RaisedButton';
 import Avatar from 'material-ui/Avatar';
 import Chip from 'material-ui/Chip';
-import { blue200, blue900 } from 'material-ui/styles/colors';
+import { blue200, lightBlue800, lightBlue50 } from 'material-ui/styles/colors';
 
 const styles = {
   chip: {
@@ -49,7 +49,7 @@ export default class Player extends Component {
        <Chip
          backgroundColor={blue200}
          style={styles.chip}>
-         <Avatar size={32} color={blue200} backgroundColor={blue900}>
+         <Avatar size={32} color={lightBlue50} backgroundColor={lightBlue800}>
            {player.ballManipuation}
          </Avatar>
          Ball Manipulation
@@ -57,7 +57,7 @@ export default class Player extends Component {
        <Chip
          backgroundColor={blue200}
          style={styles.chip}>
-         <Avatar size={32} color={blue200} backgroundColor={blue900}>
+         <Avatar size={32} color={lightBlue50} backgroundColor={lightBlue800}>
            {player.kickingAbilities}
          </Avatar>
          Kicking Abilities
@@ -65,7 +65,7 @@ export default class Player extends Component {
        <Chip
          backgroundColor={blue200}
          style={styles.chip}>
-         <Avatar size={32} color={blue200} backgroundColor={blue900}>
+         <Avatar size={32} color={lightBlue50} backgroundColor={lightBlue800}>
            {player.passingAbilities}
          </Avatar>
          Passing Abilities
@@ -73,7 +73,7 @@ export default class Player extends Component {
        <Chip
          backgroundColor={blue200}
          style={styles.chip}>
-         <Avatar size={32} color={blue200} backgroundColor={blue900}>
+         <Avatar size={32} color={lightBlue50} backgroundColor={lightBlue800}>
            {player.dualTackling}
          </Avatar>
          Dual Tackling
@@ -81,7 +81,7 @@ export default class Player extends Component {
        <Chip
          backgroundColor={blue200}
          style={styles.chip}>
-         <Avatar size={32} color={blue200} backgroundColor={blue900}>
+         <Avatar size={32} color={lightBlue50} backgroundColor={lightBlue800}>
            {player.fieldCoverage}
          </Avatar>
          Field Coverage
@@ -89,7 +89,7 @@ export default class Player extends Component {
        <Chip
          backgroundColor={blue200}
          style={styles.chip}>
-         <Avatar size={32} color={blue200} backgroundColor={blue900}>
+         <Avatar size={32} color={lightBlue50} backgroundColor={lightBlue800}>
            {player.gameStrategy}
          </Avatar>
          Game Strategy
@@ -97,7 +97,7 @@ export default class Player extends Component {
        <Chip
          backgroundColor={blue200}
          style={styles.chip}>
-         <Avatar size={32} color={blue200} backgroundColor={blue900}>
+         <Avatar size={32} color={lightBlue50} backgroundColor={lightBlue800}>
            {player.playmakingRisks}
          </Avatar>
          Playmaking Risks
